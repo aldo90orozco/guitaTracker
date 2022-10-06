@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="hero is-link has-text-centered">
+        <div class="hero-body">
+          <p class="title">
+            Guita Tracker
+          </p>
+         
+        </div>
+      </section>
+    <div class="columns">
+        <div class="column has-text-centered is-2">
+            <label for="">Tipo de movimiento</label>
+            <div class="control">
+                <div class="select">
+                    <select class="tipo-movimiento" name="" id="">
+                        <option value="ingreso">Ingreso</option>
+                        <option value="egreso">Egreso</option>
+                    </select>
+
+                </div>
+
+            </div>
+            
+            <label for="">Descripcion movimiento</label>
+                <div class="control">
+                  <input class="input descripcion-movimiento" type="text" placeholder="Descripcion movimiento">
+                </div>
+            <label for="">Importe</label>
+                <div class="control">
+                  <input class="input importe" type="number" placeholder="Importe">
+                </div>
+            <label for="">Fecha del movimiento</label>
+                <div class="control">
+                  <input class="input fecha-movimiento" type="date">
+                </div>
+
+                <div class="buttons is-centered">
+                    <button class="button is-primary is-medium boton-movimiento">Agregar movimiento</button>                   
+                  </div>    
+
+        </div>
+        <!-- Tabla movimientos -->
+        <div class="column is-10">
+            <table class="table is-fullwidth">
+                <thead>
+                    <th>Tipo de movimiento</th> 
+                    <th>Descripcion movimiento</th> 
+                    <th>Importe</th> 
+                    <th>Fecha</th> 
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot class="is-align-items-end	">
+                    <tr>
+                        <th>
+                            Total =
+                            
+                        </th>
+                        <td class="importeFinal"> </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
